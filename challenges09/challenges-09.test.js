@@ -11,7 +11,7 @@ Note: You may not use the array's built-in length property.
 const countNumberOfElements = (arr) => {
   // Solution code here...
   const count = arr.reduce( (accumulator, val, idx) => {
-    return accumulator++;
+    return accumulator + 1;
   }, 0);
   return count;
 }
@@ -75,7 +75,7 @@ let starWarsData = [{
 const returnNames = (arr) => {
   // Solution code here...
   const names = arr.reduce( (acc, val, idx) => {
-    acc[val.name] = val.name;
+    acc[idx] = val.name;
     return acc;
     
   }, []);
@@ -92,7 +92,12 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (arr) => {
   // Solution code here...
+  const newStrign = arr.reduce(accumulator, val, idx) => {
+    return 
+  }
 };
+
+// reversedString('Code 301')
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -260,7 +265,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the string with the characters in reverse order', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
