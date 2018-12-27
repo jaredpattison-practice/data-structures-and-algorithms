@@ -9,6 +9,21 @@ class LinkedList {
   }
 
   insert(value) {
+    
+    let node = new Node(value);      
+    node.next = this.head;
+    this.head = node;
+  }
+
+  insertBefore(value, newVal){
+
+  }
+
+  insertAfter(value, newVal) {
+
+  }
+
+  append(value) {
 
     let node = new Node(value);      
 
@@ -49,7 +64,7 @@ list.insert('Alpha');
 list.insert('Beta');
 list.insert('Jared');
 list.insert('Jelly');
-list.insert('Harvey');
+list.append('Harvey');
 
 console.log(list.includes('Jared'));
 
