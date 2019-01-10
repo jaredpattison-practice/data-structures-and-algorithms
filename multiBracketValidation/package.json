@@ -1,0 +1,12 @@
+{
+  "name": "multiBracketValidation",
+  "version": "1.0.0",
+  "description": "* [repo](https://github.com/jaredpattison/data-structures-and-algorithms)\r * [travis]()",
+  "main": "multi-bracket-validation.js",
+  "scripts": {
+    "test": "./multi-bracket-validation.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
