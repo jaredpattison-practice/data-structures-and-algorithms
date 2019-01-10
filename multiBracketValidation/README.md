@@ -4,6 +4,7 @@
 ### Links and Resources
 
 * [repo](https://github.com/jaredpattison/data-structures-and-algorithms)
+* [travis]()
 
 #### Tests
 * npm test (runs unit tests)
