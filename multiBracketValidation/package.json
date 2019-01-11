@@ -1,16 +1,19 @@
 {
   "name": "multiBracketValidation",
   "version": "1.0.0",
-  "description": "* [repo](https://github.com/jaredpattison/data-structures-and-algorithms)\r * [travis]()",
+  "description": "",
   "main": "multi-bracket-validation.js",
   "scripts": {
     "test": "jest --verbose",
     "test-watch": "jest --watchAll --verbose"
   },
-  "jest": {
+    "jest": {
     "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
 }
