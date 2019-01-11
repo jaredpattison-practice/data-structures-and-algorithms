@@ -16,4 +16,5 @@ describe('AnimalShelter constructor', () => {
     expected.enqueue('cat');
     expect(expected.dequeue('dog')).toEqual('dog');
   });
+
 });
