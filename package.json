@@ -1,0 +1,18 @@
+{
+  "name": "401-code-challenges",
+  "version": "1.0.0",
+  "description": "code challenges",
+  "main": "jest.config.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "author": "Jared",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.10.0",
+    "faker": "^4.1.0",
+    "jest": "^23.6.0"
+  }
+}

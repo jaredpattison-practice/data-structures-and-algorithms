@@ -16,11 +16,36 @@ class LinkedList {
   }
 
   insertBefore(value, newVal){
+    if (!this.head) {
+      this.head = new Node(newVal);
+      return;
+    }
 
+    let current = this.head;
+    while (current.next.value !== value) {
+      current = current.next;
+    }
+
+    let node = new Node(newVal);
+    node.next = current.next;
+    current.next = node;
   }
 
   insertAfter(value, newVal) {
 
+    if (!this.head) {
+      this.head = new Node(newVal);
+      return;
+    }
+
+    let current = this.head;
+    while(current.next !== value) {
+      current = current.next;
+    }
+
+    let node = new Node(newVal);
+    node.next = current.next;
+    current.next = node;
   }
 
   append(value) {
@@ -52,20 +77,10 @@ class LinkedList {
     } 
     return current.value === value ? true: false;                        
   }
+
+  print() {
+    console.log(util.inspect(this.list,{depth: this.list.length}));
+  }
 }
 
-function print() {
-  console.log(util.inspect(list,{depth:list.length}));
-}
-
-let list = new LinkedList();
-
-list.insert('Alpha');
-list.insert('Beta');
-list.insert('Jared');
-list.insert('Jelly');
-list.append('Harvey');
-
-console.log(list.includes('Jared'));
-
-print();
+module.exports = {LinkedList};
