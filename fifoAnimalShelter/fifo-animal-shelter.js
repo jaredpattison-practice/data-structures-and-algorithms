@@ -18,11 +18,11 @@ class AnimalShelter {
 
   dequeue(pref) {
     if (pref === 'cat') {
-      return this.cat.pop();
+      return this.cat.shift();
     }
 
     if (pref === 'dog') {
-      return this.dog.pop();
+      return this.dog.shift();
 
     } else {
       return null;
