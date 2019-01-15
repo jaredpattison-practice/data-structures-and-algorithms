@@ -1,48 +1,7 @@
 'use strict';
 
 const Node = require('./node.js');
-
-class Tree {
-  
-  constructor() {
-    this.root = null;
-  }
-  
-  preOrder() {
-    
-    let nodes = [];
-    
-    let _walk = (node) => {
-      nodes.push(node.value);
-      if(node.left) { _walk(node.left); }
-      if(node.right) { _walk(node.right); }
-    };
-    
-    _walk(this.root);
-    
-    return nodes;
-    
-  }
-
-  inOrder() {
-
-    let nodes = [];
-
-    let _walk = (node) => {
-      if(node.left) { _walk(node.left); }
-      nodes.push(node.value);
-      if(node.right) { _walk(node.right); }
-    };
-
-    _walk(this.root);
-
-    return nodes;
-
-  }
-  
-  
-}
-
+const Tree = require('./binary-tree.js');
 
 let tree = new Tree();
 let a = new Node('a');
@@ -58,7 +17,7 @@ b.left = d;
 b.right = e;
 tree.root = a;
 
-// console.log(tree.preOrder());
-// console.log(tree.inOrder());
+console.log(tree.preOrder());
+console.log(tree.inOrder());
 
-module.exports = Tree;
+
