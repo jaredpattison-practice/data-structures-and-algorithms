@@ -44,16 +44,14 @@ If the value is divisible by 5, replace the value with “Buzz”
 If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
 Return the tree with its new values.
 
-For explicitly-typed languages: Ensure your node values are of type Object, to hold either strings or integers.
-
 Description: Traverse the tree. Check at each node if it is divisible by 3, 5, or both. If it is, change the value of the node before moving to the next node. 
 
 ![image](./assets/fizzBuzzTree.jpg)
 [![Build Status]
 
 
-##Day 3: 
-
-
+##Day 3: Breadth first Traversal
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+![image](./assets/breadth-first-traversal.jpg)
 
 ##Day 4:
