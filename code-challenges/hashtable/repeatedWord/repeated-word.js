@@ -4,16 +4,13 @@ let Hashtable = require('../hashtable');
 
 function repeatedWord(str) {
 
-  let barr = str.toLowerCase().split(' ');
-  // let apply = String.prototype.trim.apply;
-
-  let arr = barr.map(Function.prototype.call, String.prototype.trim);
+  let arr = str.toLowerCase().split(/(?:,| )+/);
 
   let hash = new Hashtable(1024);
 
   for(let i = 0; i < arr.length; i++) {
     if(hash.contains(arr[i])) {
-      return arr;
+      return arr[i];
     }
     hash.add(arr[i], null);
   }
