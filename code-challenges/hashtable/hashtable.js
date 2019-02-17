@@ -1,6 +1,6 @@
 'use strict';
 
-const LL = require('../linkedList/linked-list.js');
+const LinkedList = require('../linkedList/linked-list.js').LinkedList;
 const util = require('util');
 
 class Hashtable {
@@ -16,7 +16,7 @@ class Hashtable {
   add(key, val) {
     let hash = this.hash(key);
     if(!this.map[hash]) {
-      this.map[hash] = new LL.LinkedList();
+      this.map[hash] = new LinkedList();
     }
 
     this.map[hash].insert({[key]: val});
@@ -39,11 +39,13 @@ class Hashtable {
   }
 }
 
-let myHash = new Hashtable(6);
-myHash.add('John', 'dad');
-myHash.add('Cathy', 'mom');
-myHash.add('Zach', 'boy');
-myHash.add('Allie', 'girl');
+module.exports = Hashtable;
 
-console.log(myHash.find('Cathy'));
+// let myHash = new Hashtable(6);
+// myHash.add('John', 'dad');
+// myHash.add('Cathy', 'mom');
+// myHash.add('Zach', 'boy');
+// myHash.add('Allie', 'girl');
+
+// console.log(myHash.find('Cathy'));
 
