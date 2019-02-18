@@ -39,11 +39,12 @@ class Hashtable {
   }
 }
 
-let myHash = new Hashtable(6);
-myHash.add('John', 'dad');
-myHash.add('Cathy', 'mom');
-myHash.add('Zach', 'boy');
-myHash.add('Allie', 'girl');
+// let myHash = new Hashtable(6);
+// myHash.add('John', 'dad');
+// myHash.add('Cathy', 'mom');
+// myHash.add('Zach', 'boy');
+// myHash.add('Allie', 'girl');
 
-console.log(myHash.find('Cathy'));
+// console.log(myHash.find('Cathy'));
 
+module.exports = Hashtable;
