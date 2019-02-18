@@ -49,5 +49,5 @@ class Hashtable {
   }
 }
 
-module. exports = Hashtable;
 
+module.exports = Hashtable;
